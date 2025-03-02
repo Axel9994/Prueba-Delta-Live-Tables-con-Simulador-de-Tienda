@@ -38,7 +38,6 @@ def generar_venta():
             } for prod in productos_vendidos
         ],
         "metodo_pago": random.choice(METODOS_PAGO),
-        "total": sum(prod["precio"] * random.randint(1, 3) for prod in productos_vendidos),
         "tienda_id": random.randint(1, 10)
     }
     return venta
