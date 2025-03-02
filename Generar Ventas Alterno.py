@@ -16,7 +16,8 @@ PRODUCTOS = [
     {"id": 3, "nombre": "Leche", "precio": 3.20, "categoria": "lacteos"},
     {"id": 4, "nombre": "Pan", "precio": 1.50, "categoria": "panaderia"},
     {"id": 5, "nombre": "Huevos", "precio": 4.00, "categoria": "proteinas"},
-    {"id": 6, "nombre": "Azúcar", "precio": 2.00, "categoria": "dulces"}
+    {"id": 6, "nombre": "Azúcar", "precio": 2.50, "categoria": "dulces"},
+    {"id": 7, "nombre": "Chocolate En Polvo", "precio": 3.50, "categoria": "dulces"}
 ]
 
 # Métodos de pago
