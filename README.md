@@ -24,3 +24,11 @@ El proyecto consta de:
 - Python 3.8+ con las siguientes dependencias:
   ```bash
   pip install azure-eventhub
+
+
+
+## Resultados
+
+![Creacion de Canalización](https://images4.imagebam.com/ba/1a/e5/ME101M85_o.JPG)
+
+![Dashboard Prueba](https://images4.imagebam.com/03/d9/e5/ME101M87_o.JPG)
