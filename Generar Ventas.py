@@ -34,7 +34,7 @@ def generar_venta():
                 "id": prod["id"],
                 "nombre": prod["nombre"],
                 "precio": prod["precio"],
-                "cantidad": random.randint(1, 3)
+                "cantidad": random.randint(0, 5)
             } for prod in productos_vendidos
         ],
         "metodo_pago": random.choice(METODOS_PAGO),

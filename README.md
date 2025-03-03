@@ -7,16 +7,16 @@ Este proyecto simula una tienda de víveres que envía datos de ventas en tiempo
 El proyecto consta de:
 - **Generador de datos**: Un script Python que simula ventas y envía datos en formato JSON a Azure Event Hubs.
 - **Infraestructura**: Un script de Azure CLI para desplegar Event Hubs y Databricks con un secreto configurado.
-- **Pipeline DLT**: Un pipeline en SQL que procesa los datos en capas bronze, silver y gold, con dimensiones separadas para productos y métodos de pago.
+- **Pipeline DLT**: Un pipeline en Cuaderno de Python que procesa los datos en capas bronze, silver y gold
 - **Limpieza**: Un script de Azure CLI para eliminar todos los recursos creados.
 
 ### Arquitectura
 1. **Fuente de datos**: Simulador Python → Azure Event Hubs.
 2. **Procesamiento**: Azure Databricks con Delta Live Tables.
 3. **Capas**:
-   - **Bronze**: Datos crudos (`sales_raw`, `productos_raw`).
-   - **Silver**: Dimensiones (`dimProducto`, `dimMetodoPago`) y tabla de hechos (`sales_silver`).
-   - **Gold**: Resumen diario por método de pago y producto (`sales_daily_gold`).
+   - **Bronze**: Datos crudos en tabla sales_raw.
+   - **Silver**: Datos limpios en tabla sales_silver.
+   - **Gold**: Resumen diario por método de pago y producto en table sales_gold.
 
 ## Requisitos previos
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) instalado y autenticado (`az login`).
